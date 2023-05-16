@@ -9,7 +9,7 @@ def ask_question(conversation):
         n=4, # how many responses to generate
         )
     print('-------------------------------------START_ANSWER-----------------------------------------\n')
-    print(response.choices[0].text.strip())
+    print(response.choices[0].text.strip("<>"))
     print('\n--------------------------------------END_ANSWER------------------------------------------')
 	
 while Start == True:    
@@ -17,4 +17,4 @@ while Start == True:
     if conversation == "Q":
       Start = False
     else:  
-      ask_question(conversation)   
+      ask_question(conversation)
