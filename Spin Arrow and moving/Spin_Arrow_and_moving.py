@@ -2,7 +2,7 @@ import os
 from time import sleep
 #####################################################################
 arrow_lenght=  20
-space_down  =  1
+space_down  =  5
 space_right =  int(arrow_lenght/2)
 
 #####################################################################
@@ -87,18 +87,18 @@ def Left_Arrow():
                print("*",end='')
         print("")
 #####################################################################
-
+delay = 1
 while True:
     os.system('cls')
     Up_ARROW()
-    sleep(0.1)
+    sleep(delay)
     os.system('cls')
     Right_Arow()
-    sleep(0.1)
+    sleep(delay)
     os.system('cls')
     Down_Arow()
-    sleep(0.1)
+    sleep(delay)
     os.system('cls')
     Left_Arrow()
-    sleep(0.1)
-    space_right += 5
+    sleep(delay)
+    space_right += 10
